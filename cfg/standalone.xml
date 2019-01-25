@@ -149,7 +149,7 @@
         <subsystem xmlns="urn:jboss:domain:datasources:5.0">
             <datasources>
                 <datasource jndi-name="java:jboss/datasources/ExampleDS" pool-name="ExampleDS" enabled="true" use-java-context="true">
-                    <connection-url>jdbc:postgresql://${env.POSTGRESQL_SERVICE_HOST}:${env.POSTGRESQL_SERVICE_PORT_POSTGRESQL}/${env.POSTGRESQL_DATABASE}</connection-url>
+                    <connection-url>jdbc:postgresql://${env.POSTGRESQL_SERVICE_HOST}:${env.POSTGRESQL_SERVICE_PORT}/${env.POSTGRESQL_DATABASE}</connection-url>
                     <driver>postgres</driver>
                     <security>
                         <user-name>${env.POSTGRESQL_USER}</user-name>
