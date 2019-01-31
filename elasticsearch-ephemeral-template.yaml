@@ -81,9 +81,6 @@ objects:
             containers:
               - name: elasticsearch
                 image: gcr.io/quantiply-edge-cloud/elasticsearch-1.7.2:v1
-                securityContext:
-                  runAsUser: 0
-                  privileged: false
                 ports:
                   - name: "http"
                     containerPort: 9200
