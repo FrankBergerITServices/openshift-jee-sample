@@ -36,3 +36,17 @@ oc expose service wildflydemo
 ```bash
 oc delete project demojee
 ```
+
+
+Alternative (faster) Way using a Template
+=========================================
+
+* Create a new project:
+```bash
+oc new-project demojee
+```
+
+* Directly create the app by referencing the template:
+```bash
+oc new-app -f https://raw.githubusercontent.com/FrankBergerITServices/openshift-jee-sample/master/demojee.yaml
+```
