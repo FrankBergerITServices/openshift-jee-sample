@@ -80,7 +80,7 @@ objects:
           spec:
             containers:
               - name: elasticsearch
-                image: gcr.io/quantiply-edge-cloud/elasticsearch-1.7.2:v1
+                image: elasticsearch
                 ports:
                   - name: "http"
                     containerPort: 9200
