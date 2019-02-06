@@ -95,10 +95,10 @@ objects:
                     path: /_cat/health?v
                     port: 9200
                     scheme: HTTP
-                  initialDelaySeconds: 10
-                  periodSeconds: 10
+                  initialDelaySeconds: 30
+                  periodSeconds: 30
                   successThreshold: 1
-                  timeoutSeconds: 10                    
+                  timeoutSeconds: 15                    
                 env:
                   - name: "ES_JAVA_OPTS"
                     value: "-Xms256m -Xmx256m"                  
