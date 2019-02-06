@@ -89,6 +89,8 @@ objects:
                     containerPort: 9300
                     protocol: TCP
                 env:
+                  - name: "ES_JAVA_OPTS"
+                    value: "-Xms256m -Xmx256m"                  
                   - name: "ES_HEAP_SIZE"
                     value: "256m"      
                   - name: "bootstrap.memory_lock"
