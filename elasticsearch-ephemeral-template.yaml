@@ -93,8 +93,6 @@ objects:
                     value: "-Xms256m -Xmx256m"                  
                   - name: "ES_HEAP_SIZE"
                     value: "256m"      
-                  - name: "bootstrap.memory_lock"
-                    value: "true"                     
                   - name: "KUBERNETES_TRUST_CERT"
                     value: "true"
                   - name: KUBERNETES_CA_CERTIFICATE_FILE
