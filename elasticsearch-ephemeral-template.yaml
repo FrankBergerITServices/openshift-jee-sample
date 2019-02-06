@@ -90,7 +90,9 @@ objects:
                     protocol: TCP
                 env:
                   - name: "ES_HEAP_SIZE"
-                    value: "256m"                
+                    value: "256m"      
+                  - name: "bootstrap.memory_lock"
+                    value: "true"                     
                   - name: "KUBERNETES_TRUST_CERT"
                     value: "true"
                   - name: KUBERNETES_CA_CERTIFICATE_FILE
