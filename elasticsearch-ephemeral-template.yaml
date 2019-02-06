@@ -69,7 +69,7 @@ objects:
           type: Recreate
         triggers:
           - type: ConfigChange
-        replicas: 1
+        replicas: 2
         selector:
           name: '${INSTANCE_NAME}'
           component: elasticsearch
