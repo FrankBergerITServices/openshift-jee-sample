@@ -129,8 +129,8 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: wildfly:14.0
-          namespace: openshift
+          name: wildfly-centos7:latest
+          namespace: quay.io/wildfly
       type: Source
     triggers:
     - generic:
