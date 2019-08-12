@@ -129,7 +129,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: quay.io/wildfly/wildfly-centos7:latest
+          name: "quay.io/jfdenise/wildfly-centos7:17.0"
           namespace: openshift
       type: Source
     triggers:
