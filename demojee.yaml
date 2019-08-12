@@ -129,7 +129,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: "quay.io/jfdenise/wildfly-centos7:17.0"
+          name: jboss-eap72-openshift
           namespace: openshift
       type: Source
     triggers:
