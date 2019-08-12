@@ -129,7 +129,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: jboss-eap72-openshift
+          name: jboss-eap72-openshift:latest
           namespace: openshift
       type: Source
     triggers:
