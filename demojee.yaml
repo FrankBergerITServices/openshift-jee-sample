@@ -3,9 +3,10 @@ kind: Template
 metadata:
   name: demojee-wildfly-postgresql
   annotations:
-    version: 0.0.1
+    version: 0.0.2
     openshift.io/display-name: DemoJee App + Wildfly + PostgreSQL
     description: Some demojee application from GitHub on Wildfly using PostgreSQL as database
+    tags: "builder,java"
   message: A new demojee app was created
 objects:
 - apiVersion: v1
