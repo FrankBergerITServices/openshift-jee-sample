@@ -178,17 +178,21 @@ objects:
       spec:
         containers:
         - env:
-          - name: POSTGRESQL_DATABASE
+          - name: DB_SERVICE_PREFIX_MAPPING
+            value: eap-app-postgresql=DB
+          - name: DB_JNDI
+            value: java:jboss/datasources/TodoListDS
+          - name: DB_DATABASE
             valueFrom:
               secretKeyRef:
                 key: database-name
                 name: postgresql
-          - name: POSTGRESQL_USER
+          - name: DB_USERNAME
             valueFrom:
               secretKeyRef:
                 key: database-user
                 name: postgresql
-          - name: POSTGRESQL_PASSWORD
+          - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
                 key: database-password
