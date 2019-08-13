@@ -182,7 +182,6 @@ objects:
             value: postgresql=DB
           - name: DB_JNDI
             value: java:jboss/datasources/ExampleDS
-          - name: 
           - name: DB_DATABASE
             valueFrom:
               secretKeyRef:
