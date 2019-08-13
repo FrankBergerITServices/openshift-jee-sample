@@ -6,7 +6,7 @@ metadata:
     version: 0.0.2
     openshift.io/display-name: DemoJee App + Wildfly + PostgreSQL
     description: Some demojee application from GitHub on Wildfly using PostgreSQL as database
-    tags: "builder,java"
+    tags: "quickstart,builder,java,eap"
   message: A new demojee app was created
 objects:
 - apiVersion: v1
