@@ -179,9 +179,13 @@ objects:
         containers:
         - env:
           - name: DB_SERVICE_PREFIX_MAPPING
-            value: postgresql-POSTGRESQL=DB
+            value: wildflydemo-POSTGRESQL=DB
           - name: DB_JNDI
             value: java:jboss/datasources/ExampleDS
+          - name: WILDFLYDEMO_POSTGRESQL_SERVICE_HOST
+            value: ${POSTGRESQL_SERVICE_HOST}
+          - name: WILDFLYDEMO_POSTGRESQL_SERVICE_PORT
+            value: ${WILDFLYDEMO_POSTGRESQL_SERVICE_PORT}
           - name: DB_DATABASE
             valueFrom:
               secretKeyRef:
