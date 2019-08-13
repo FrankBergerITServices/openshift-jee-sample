@@ -185,7 +185,7 @@ objects:
           - name: WILDFLYDEMO_POSTGRESQL_SERVICE_HOST
             value: ${POSTGRESQL_SERVICE_HOST}
           - name: WILDFLYDEMO_POSTGRESQL_SERVICE_PORT
-            value: ${WILDFLYDEMO_POSTGRESQL_SERVICE_PORT}
+            value: ${POSTGRESQL_SERVICE_PORT}
           - name: DB_DATABASE
             valueFrom:
               secretKeyRef:
