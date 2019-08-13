@@ -181,7 +181,7 @@ objects:
           - name: DB_SERVICE_PREFIX_MAPPING
             value: eap-app-postgresql=DB
           - name: DB_JNDI
-            value: java:jboss/datasources/TodoListDS
+            value: java:jboss/datasources/ExampleDS
           - name: DB_DATABASE
             valueFrom:
               secretKeyRef:
