@@ -131,7 +131,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: jboss-eap72-openshift:latest
+          name: wildfly:21.0
           namespace: openshift
       type: Source
     triggers:
