@@ -22,7 +22,7 @@ oc new-app postgresql -e POSTGRESQL_USER=demo -e POSTGRESQL_PASSWORD=developer -
 
 * Create JBoss/Wildfly Applicationserver instance including the Demo Application from this Git-Repo:
 ```bash
-oc new-app wildfly:latest~https://github.com/FrankBergerITServices/openshift-jee-sample.git -e POSTGRESQL_USER=demo -e POSTGRESQL_PASSWORD=developer -e POSTGRESQL_DATABASE=demojee --name='wildflydemo'
+oc new-app wildfly:21.0~https://github.com/FrankBergerITServices/openshift-jee-sample.git -e POSTGRESQL_USER=demo -e POSTGRESQL_PASSWORD=developer -e POSTGRESQL_DATABASE=demojee --name='wildflydemo'
 ```
 
 * If you have not Wildfly-Image on your Openshift-Cluster I may have to create one first:
