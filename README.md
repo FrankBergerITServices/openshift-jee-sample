@@ -25,6 +25,11 @@ oc new-app postgresql -e POSTGRESQL_USER=demo -e POSTGRESQL_PASSWORD=developer -
 oc new-app wildfly:latest~https://github.com/FrankBergerITServices/openshift-jee-sample.git -e POSTGRESQL_USER=demo -e POSTGRESQL_PASSWORD=developer -e POSTGRESQL_DATABASE=demojee --name='wildflydemo'
 ```
 
+* If you have not Wildfly-Image on your Openshift-Cluster I may have to create one first:
+```bash
+oc import-image wildfly:21.0 --confirm --from=quay.io/wildfly/wildfly-centos7:21.0 --insecure -n openshift
+```
+
 * To make our Demo Application accessible on the Internet we need to add a Route:
 ```bash
 oc expose service wildflydemo
